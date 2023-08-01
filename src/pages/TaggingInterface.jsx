@@ -3,21 +3,26 @@ import { useState, useEffect } from "react"; // Hooks to store states and fetch 
 import { Link, useNavigate } from "react-router-dom"; // Routing hooks
 import { Button } from "reactstrap"; // Button component
 
-export default function Tagger({setActivePage}) {
+// Import tagger grid
+import Tagger from "../components/Tagger.jsx";
+
+export default function TaggerUI({setActivePage}) {
 
     // Set the page's title and the active page to Movies
     useEffect(() => {
         document.title = "Match Tagger | Tagger";
         setActivePage("Tagger");
-    }, []);
+    }, [setActivePage]);
 
     return (
-        <div className = "tagger-grid">
+        <div className = "tagger-ui">
 
             {/* Page title */}
             <h2><b>Tagger</b></h2>
 
-            
+            <div className = "tagger-grid">
+                <Tagger />
+            </div>
 
         </div>
     );

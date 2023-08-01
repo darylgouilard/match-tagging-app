@@ -1,4 +1,5 @@
 // Import libraries
+import "./stylingSheets/Header.css";
 
 // Import components and icon
 import Navigation from "./Nav";
@@ -10,7 +11,7 @@ export default function Header({activePage}) {
             <div id="icon">
                 <a href = "/">
                     <img
-                    width="90"
+                    width="80"
                     alt="Movie icon"
                     src={Logo}
                     />

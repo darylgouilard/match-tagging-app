@@ -1,0 +1,16 @@
+/* Configs for the footer */
+.footer-pin {
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+footer {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    background: #1f0026;
+    padding: 40px;
+    text-align: center;
+    color: #529c7c;
+}

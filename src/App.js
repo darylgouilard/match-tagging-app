@@ -11,7 +11,7 @@ import Footer from "./components/Footer.jsx";
 
 // Import pages
 import Home from "./pages/Home.jsx";
-import Tagger from "./pages/TaggingInterface.jsx";
+import TaggerUI from "./pages/TaggingInterface.jsx";
 
 export default function App() {
   // Variable to set title of active page
@@ -28,7 +28,7 @@ export default function App() {
             <Route path="/" element={<Home setActivePage={setActivePage} />} />
             <Route
               path="/tagger"
-              element={<Tagger setActivePage={setActivePage} />}
+              element={<TaggerUI setActivePage={setActivePage} />}
             />
           </Routes>
         </div>

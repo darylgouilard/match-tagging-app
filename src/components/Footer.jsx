@@ -1,3 +1,6 @@
+// Import styling sheet
+import "./stylingSheets/Footer.css";
+
 /**
  * @name Footer function
  * @summary Renders the footer when it is called

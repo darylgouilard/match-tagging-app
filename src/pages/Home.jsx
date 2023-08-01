@@ -7,7 +7,7 @@ export default function Home({setActivePage}) {
     useEffect(() => {
         document.title = "Match Tagger | Home";
         setActivePage("Home");
-    }, []);
+    }, [setActivePage]);
 
     return (
         <main>
