@@ -17,9 +17,6 @@ export default function TaggerUI({setActivePage}) {
     return (
         <div className = "tagger-ui">
 
-            {/* Page title */}
-            <h2><b>Tagger</b></h2>
-
             <div className = "tagger-grid">
                 <Tagger />
             </div>

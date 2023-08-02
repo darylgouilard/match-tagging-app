@@ -1,51 +1,150 @@
 .tagger-interface {
-    width: 70%;
-    height: 50%;
+    width: 85%;
+    height: 70%;
     display: flex;
     flex-flow: row wrap;
     margin: auto;
 }
 
+/* Configs for the timer */
 .timer {
-    width: 8%;
+    width: 12%;
     margin-right: 2%;
     text-align: center;
     border-left: solid 1px black;
     border-right: solid 1px black;
 }
 
+/* Configs for the tagging buttons */
 .tagging-buttons {
-    width: 90%;
+    width: 86%;
     display: block;
     text-align: center;
 }
 
+/* Game time */
 #game-time {
     width: 100%;
     height: 27px;
     font-size: 15px;
 }
 
-#first-half {
+#first-half, #second-half {
     width: 49%;
-    margin-right: 2%;
     margin-top: 3px;
+}
+
+#first-half {
+    float: left;
 }
 
 #second-half {
+    float: right;
+}
+
+/* Sections */
+.phases-of-game, .phases-details,
+.build-up-details, .transition-details,
+.set-pieces {
+    display: block;
+    width: 100%;
+}
+
+/* Badges */
+#game-phases, #details-of-phase, #set-piece,
+#specific-actions {
+    width: 100%;
+}
+
+/* Actions Grids */
+.team-actions, .player-actions,
+.in-possession, .out-of-possession,
+.set-piece-location, .set-piece-outcome {
+    display: block;
+    width: 49%;
+    text-align: center;
+}
+
+.team-actions, .in-possession, .set-piece-location {
+    float: left;
+}
+
+.player-actions, .out-of-possession, .set-piece-outcome {
+    float: right;
+}
+
+#bp, #bpo,
+#sp-location, #sp-outcome {
+    width: 100%;
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+/* Phase details */
+#build-up, #transition, #final-third,
+#pressing, #mixed, #contain,
+#sp-left, #sp-centre, #sp-right,
+#sp-success, #sp-saved, #sp-out {
+    width: 32%;
+    margin-top: 3px;
+    font-size: 10px;
+    text-align: center;
+}
+
+#retain, #direct,
+#home-sp, #away-sp {
     width: 49%;
     margin-top: 3px;
+    font-size: 12px;
 }
 
-.team-actions {
-    width: 43%;
-    margin-right: 4%;
-    text-align: center;
-    border-right: solid 1px black;
+#withdrawn, #midfield, #attack, 
+#through, #over, #around,
+#high, #mid, #low {
+    width: 32%;
+    margin-top: 5px;
+    font-size: 12px;
 }
 
-.player-actions {
-    width: 43%;
-    text-align: center;
-    border-right: solid 1px black;
+#build-up, #pressing, #retain,
+#withdrawn, #through, #high,
+#home-sp, #direct-fk, #indirect-fk,
+#sp-left, #sp-success {
+    float: left;
 }
+
+#transition, #mixed,
+#midfield, #over, #mid,
+#penalty, #sp-centre, #sp-saved {
+    float: center;
+}
+
+#final-third, #contain, #direct,
+#attack, #around, #low,
+#away-sp, #corner, #throw-in,
+#sp-right, #sp-out {
+    float: right;
+}
+
+/* Set piece types */
+.set-piece-type {
+    float: inline-start;
+}
+
+#direct-fk, #indirect-fk, #penalty,
+#corner, #throw-in {
+    width: 18%;
+    margin-top: 5px;
+    font-size: 10px;
+    text-align: center;
+}
+
+#direct-fk {
+    margin-right: 2.5%;
+}
+
+#corner {
+    margin-left: 2.5%;
+}
+
+/* Player Actions */
